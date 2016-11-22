@@ -28,6 +28,9 @@ TARGET_INIT_VENDOR_LIB := libinit_msm8974
 TARGET_LIBINIT_MSM8974_DEFINES_FILE := device/samsung/hltekdi/init/init_hlte.cpp
 TARGET_UNIFIED_DEVICE := true
 
+# SNFC
+BOARD_NFC_CHIPSET := sony
+
 # Bluetooth
 BOARD_BLUEDROID_VENDOR_CONF := $(LOCAL_PATH)/bluetooth/vnd_hlte.txt
 BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := $(LOCAL_PATH)/bluetooth

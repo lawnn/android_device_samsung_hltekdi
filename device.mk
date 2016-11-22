@@ -22,5 +22,17 @@ $(call inherit-product-if-exists, vendor/samsung/hltekdi/hltekdi-vendor.mk)
 # Overlays
 DEVICE_PACKAGE_OVERLAYS += device/samsung/hltekdi/overlay
 
+# SONY NFC
+PRODUCT_PACKAGES += \
+    com.android.nfc_extras \
+    NfcSony \
+    Tag
+
+PRODUCT_COPY_FILES += \
+    frameworks/native/data/etc/com.nxp.mifare.xml:system/etc/permissions/com.nxp.mifare.xml \
+    $(LOCAL_PATH)/configs/libnfc-brcm.conf:system/etc/libnfc-brcm.conf \
+    $(LOCAL_PATH)/configs/libnfc-nxp.conf:system/etc/libnfc-nxp.conf \
+    $(LOCAL_PATH)/configs/nfcee_access.xml:system/etc/nfcee_access.xml
+
 # Common hlte
 $(call inherit-product, device/samsung/hlte-common/hlte.mk)
