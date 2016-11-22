@@ -34,5 +34,10 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/libnfc-nxp.conf:system/etc/libnfc-nxp.conf \
     $(LOCAL_PATH)/configs/nfcee_access.xml:system/etc/nfcee_access.xml
 
+# Ramdisk for Felica
+PRODUCT_PACKAGES += \
+    init.carrier.rc \
+    init.felica.sh
+
 # Common hlte
 $(call inherit-product, device/samsung/hlte-common/hlte.mk)
