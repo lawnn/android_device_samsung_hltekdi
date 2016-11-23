@@ -15,7 +15,7 @@
 # inherit from common hlte
 -include device/samsung/hlte-common/BoardConfigCommon.mk
 
-TARGET_OTA_ASSERT_DEVICE := SCL22,hltekdi
+TARGET_OTA_ASSERT_DEVICE := hlte,SCL22,hltekdi
 
 # Kernel
 TARGET_KERNEL_VARIANT_CONFIG := msm8974_sec_hlte_kdi_defconfig
