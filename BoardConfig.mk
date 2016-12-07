@@ -28,11 +28,5 @@ TARGET_UNIFIED_DEVICE := true
 # SNFC
 BOARD_NFC_CHIPSET := sony
 
-# Bluetooth
-BOARD_BLUEDROID_VENDOR_CONF := $(LOCAL_PATH)/bluetooth/vnd_hlte.txt
-BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := $(LOCAL_PATH)/bluetooth
-BOARD_BLUETOOTH_USES_HCIATTACH_PROPERTY := false
-BOARD_HAVE_BLUETOOTH_BCM := true
-
 # inherit from the proprietary version
 -include vendor/samsung/hltekdi/BoardConfigVendor.mk
