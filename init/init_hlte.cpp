@@ -63,8 +63,8 @@ void init_target_properties()
 
 
         /* hltekdi */
-        property_set("ro.build.fingerprint", "KDDI/SCL22/SCL22:5.0/LRX21V/SCL22KDU2GOH7:user/release-keys");
-        property_set("ro.build.description", "hltekdi-user 5.0 LRX21V SCL22KDU2GOH7 release-keys");
+        property_set("ro.build.fingerprint", "KDDI/SCL22/SCL22:5.0/LRX21V/SCL22KDU2GPG2:user/release-keys");
+        property_set("ro.build.description", "hltekdi-user 5.0 LRX21V SCL22KDU2GPG2 release-keys");
         property_set("ro.product.model", "SCL22");
         property_set("ro.product.device", "SCL22");
         cdma_properties("1", "44054", "KDDI");
